@@ -1,4 +1,4 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 
 const DEFAULT_URL = 'https://www.carlosbaraza.com';
 const app = express();
