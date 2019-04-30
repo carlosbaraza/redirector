@@ -1,0 +1,29 @@
+{
+  "name": "redirector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosbaraza/redirector.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosbaraza/redirector/issues"
+  },
+  "homepage": "https://github.com/carlosbaraza/redirector#readme",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "@types/node": "^11.13.8",
+    "express": "^4.16.4",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.0"
+  }
+}
