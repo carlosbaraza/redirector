@@ -1,11 +1,13 @@
 import express from 'express';
 
-const DEFAULT_URL = 'https://www.carlosbaraza.com';
+import { getMap } from './map';
+
 const app = express();
 
 app.get('*', (req, res) => {
-  console.log(`Redirecting "${req.hostname}" to "${DEFAULT_URL}"`);
-  res.redirect(DEFAULT_URL);
+  const map = getMap(req.hostname);
+  console.log(`Redirecting "${req.hostname}" to "${map.to}"`);
+  res.redirect(map.to);
 });
 
 const port = process.env.PORT || 3000;
