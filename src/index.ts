@@ -6,8 +6,11 @@ const app = express();
 
 app.get('*', (req, res) => {
   const map = getMap(req.hostname);
-  console.log(`Redirecting "${req.hostname}" to "${map.to}"`);
-  res.status(map.code).redirect(map.to);
+  const isDefault = map.from === '*';
+  console.log(
+    `Redirecting "${req.hostname}" to "${map.to}". isDefault: ${isDefault}`
+  );
+  res.redirect(map.code, map.to);
 });
 
 const port = process.env.PORT || 3000;
