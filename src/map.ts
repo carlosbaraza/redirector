@@ -13,7 +13,7 @@ const DEFAULT_MAP: Map = {
 const redirects: Map[] = [
   { from: 'baraza.io', to: 'https://www.carlosbaraza.com', code: 301 },
   { from: 'www.baraza.io', to: 'https://www.carlosbaraza.com', code: 301 },
-  { from: 'demo.wisertag.com', to: 'https://www.wisertag.com', code: 302 }
+  { from: 'demo.wisertag.com', to: 'https://www.wisertag.com/demo', code: 302 }
 ];
 
 export function getMap(hostname: string): Map {
